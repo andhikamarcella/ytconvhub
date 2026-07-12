@@ -1,1 +1,143 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Pusat semua layanan YTConv: converter, panduan, dokumentasi, status, tools, bantuan, dan update."><meta property="og:title" content="YTConv Hub"><meta property="og:description" content="Semua layanan YTConv dalam satu tempat."><title>YTConv Hub — Semua layanan dalam satu tempat</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/shared.css"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"YTConv Hub"}</script></head><body><main id="main-content" class="hub"><nav class="hub-nav"><div class="brand">YTConv</div><a href="https://ytconv.onrender.com/">Buka Converter</a></nav><section class="hero"><div class="eyebrow">Satu pintu untuk semuanya</div><h1>Cari bantuan. Cek status. Lanjut unduh.</h1><p>Nggak perlu nebak harus buka halaman mana. Pilih kebutuhanmu dan langsung lanjut.</p><input id="hub-search" class="hub-search" type="search" placeholder="Cari: error 403, Android, cookies, status…"></section><section class="grid" id="hub-grid"><a class="card" href="https://ytconvguide.vercel.app/"><span>YTConv ecosystem</span><h2>Guide</h2><p>Panduan langkah demi langkah</p><b>Buka →</b></a><a class="card" href="https://ytconvdocs.vercel.app/"><span>YTConv ecosystem</span><h2>Docs</h2><p>Dokumentasi fitur dan teknis</p><b>Buka →</b></a><a class="card" href="https://ytconvstatus.vercel.app/"><span>YTConv ecosystem</span><h2>Status</h2><p>Kondisi seluruh layanan</p><b>Buka →</b></a><a class="card" href="https://ytconvtools.vercel.app/"><span>YTConv ecosystem</span><h2>Tools</h2><p>Peralatan link dan command</p><b>Buka →</b></a><a class="card" href="https://ytconvhelp.vercel.app/"><span>YTConv ecosystem</span><h2>Help</h2><p>Solusi error dan bantuan</p><b>Buka →</b></a><a class="card" href="#"><span>YTConv ecosystem</span><h2>Pulse</h2><p>Update dan kompatibilitas platform</p><b>Buka →</b></a></section><section class="trust"><div><h3>Privasi jelas</h3><p>Jangan unggah cookies atau data login ke website mana pun.</p></div><div><h3>Status apa adanya</h3><p>Kondisi layanan ditampilkan berdasarkan pemeriksaan nyata, bukan angka buatan.</p></div><div><h3>Ringan di semua perangkat</h3><p>Halaman dibuat tanpa framework berat dan tetap nyaman di HP.</p></div></section><footer class="footer"><span>YTConv Hub v2.0.0</span><a href="/privacy.html">Privasi</a><a href="/terms.html">Ketentuan</a><a href="/security.html">Keamanan</a></footer></main><script>const s=document.getElementById('hub-search');s.addEventListener('input',()=>{const q=s.value.toLowerCase();document.querySelectorAll('.card').forEach(c=>c.hidden=!c.textContent.toLowerCase().includes(q))})</script><script src="/shared.js" defer></script></body></html>
+<!doctype html>
+<html lang="id" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pusat layanan YTConv: converter, panduan, dokumentasi, status, tools, bantuan, serta update kompatibilitas.">
+  <meta name="theme-color" content="#f3f1ec" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111210" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="YTConv Hub">
+  <meta property="og:description" content="Temukan layanan YTConv yang kamu butuhkan tanpa muter-muter.">
+  <link rel="canonical" href="https://ytconvhub.vercel.app/">
+  <title>YTConv Hub — Pilih jalur, langsung lanjut</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"YTConv Hub","url":"https://ytconvhub.vercel.app/"}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Lewati ke isi utama</a>
+
+  <header class="topbar">
+    <a class="identity" href="/" aria-label="Beranda YTConv Hub">
+      <span class="identity-mark" aria-hidden="true">YC</span>
+      <span>
+        <strong>YTConv Hub</strong>
+        <small>Service directory</small>
+      </span>
+    </a>
+
+    <div class="topbar-actions">
+      <div class="theme-switcher" role="group" aria-label="Pilih tema">
+        <button type="button" data-theme-choice="light" aria-pressed="false" title="Tema terang">Terang</button>
+        <button type="button" data-theme-choice="dark" aria-pressed="false" title="Tema gelap">Gelap</button>
+        <button type="button" data-theme-choice="auto" aria-pressed="true" title="Ikuti pengaturan perangkat">Otomatis</button>
+      </div>
+      <a class="converter-button" href="https://ytconv.onrender.com/">Buka Converter</a>
+    </div>
+  </header>
+
+  <main id="main-content" class="shell">
+    <section class="intro" aria-labelledby="hub-title">
+      <div class="intro-copy">
+        <p class="kicker">7 layanan · satu jalur masuk</p>
+        <h1 id="hub-title">Pilih kebutuhanmu.<br>Langsung ke tempatnya.</h1>
+        <p class="intro-text">Cari masalah, fitur, atau nama layanan. Hub akan mengarahkanmu ke halaman yang paling cocok.</p>
+
+        <div class="search-wrap" id="search-wrap">
+          <label class="search-box" for="hub-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m1.35-5.65a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
+            <input id="hub-search" type="search" placeholder="Coba: error 403, Android, cookies, status…" autocomplete="off" aria-controls="search-results" aria-expanded="false">
+            <kbd>/</kbd>
+          </label>
+          <div id="search-results" class="search-results" hidden role="listbox" aria-label="Hasil pencarian"></div>
+        </div>
+
+        <div class="quick-queries" aria-label="Pencarian cepat">
+          <button type="button" data-query="error">Lagi error</button>
+          <button type="button" data-query="Android">Pakai Android</button>
+          <button type="button" data-query="command">Butuh command</button>
+          <button type="button" data-query="status">Cek status</button>
+        </div>
+      </div>
+
+      <aside class="route-board" aria-label="Jalur cepat">
+        <div class="route-board-head">
+          <span>Jalur cepat</span>
+          <span aria-hidden="true">↗</span>
+        </div>
+        <a href="https://ytconv.onrender.com/">
+          <span class="route-index">01</span>
+          <span><strong>Mau langsung unduh</strong><small>Buka converter utama</small></span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="https://ytconvhelp.vercel.app/">
+          <span class="route-index">02</span>
+          <span><strong>Prosesnya gagal</strong><small>Cari solusi berdasarkan error</small></span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="https://ytconvtools.vercel.app/">
+          <span class="route-index">03</span>
+          <span><strong>Butuh alat tambahan</strong><small>Bersihkan link atau buat command</small></span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="https://ytconvstatus.vercel.app/">
+          <span class="route-index">04</span>
+          <span><strong>Mau cek layanan</strong><small>Lihat kondisi tiap website</small></span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </aside>
+    </section>
+
+    <section class="directory" aria-labelledby="directory-title">
+      <div class="section-head">
+        <div>
+          <p class="section-label">Direktori</p>
+          <h2 id="directory-title">Semua layanan</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter layanan">
+          <button type="button" class="is-active" data-filter="all" aria-pressed="true">Semua</button>
+          <button type="button" data-filter="start" aria-pressed="false">Mulai</button>
+          <button type="button" data-filter="learn" aria-pressed="false">Belajar</button>
+          <button type="button" data-filter="support" aria-pressed="false">Bantuan</button>
+          <button type="button" data-filter="monitor" aria-pressed="false">Pantau</button>
+        </div>
+      </div>
+
+      <div id="service-list" class="service-list" aria-live="polite"></div>
+      <p id="empty-state" class="empty-state" hidden>Nggak ada layanan yang cocok. Coba kata yang lebih pendek.</p>
+    </section>
+
+    <section class="info-strip" aria-label="Informasi YTConv">
+      <article>
+        <span>01</span>
+        <h3>Tautan jelas</h3>
+        <p>Setiap tombol menuju layanan resmi YTConv, termasuk Pulse.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Tema fleksibel</h3>
+        <p>Pilih terang, gelap, atau otomatis mengikuti perangkat.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Pencarian nyata</h3>
+        <p>Cari berdasarkan masalah, perangkat, fitur, atau nama layanan.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>YTConv Hub</strong>
+      <span>v2.1.0 · diperbarui 12 Juli 2026</span>
+    </div>
+    <nav aria-label="Tautan legal">
+      <a href="/privacy.html">Privasi</a>
+      <a href="/terms.html">Ketentuan</a>
+      <a href="/security.html">Keamanan</a>
+      <a href="/contact.html">Kontak</a>
+    </nav>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
